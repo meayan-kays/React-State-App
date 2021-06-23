@@ -34,7 +34,7 @@ export class App extends Component {
     this.setState({
       interval : setInterval(() => {
         this.setState({timer : this.state.timer + 1})
-      }, 60000)
+      }, 1000)
     })
   }
 
@@ -55,7 +55,7 @@ export class App extends Component {
             </div>  
         </div>) : (<h4 style={this.messageStyle}>Click on the button to show User Profile</h4>)
         }
-        <h4 style={this.messageStyle}>Component Life Cycle : {this.state.timer} minutes</h4>
+        <h4 style={this.messageStyle}>Component Life Cycle : {this.state.timer} secondes</h4>
         
         
       </div>
